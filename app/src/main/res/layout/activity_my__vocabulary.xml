@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_Vocabulary">
+
+
+
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A2040A">
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <ProgressBar
+            android:id="@+id/pro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/ll"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            android:layout_marginHorizontal="5dp"
+            ads:adUnitId="ca-app-pub-7109795074062636/3629715095">
+        </com.google.android.gms.ads.AdView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:layout_marginTop="3dp"
+            android:id="@+id/perma"
+            android:visibility="gone"
+            android:layout_marginVertical="2dp"
+            tools:ignore="InvalidId">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+
+                    <TextView
+                        android:id="@+id/word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Word"
+                        android:textSize="18dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="normal"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/meaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Word"
+                android:textSize="13dp"
+                android:textIsSelectable="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:textStyle="normal"
+                android:textColor="#CC050C"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/exmaple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Found"
+                android:textSize="13dp"
+                android:layout_marginLeft="19dp"
+                android:textIsSelectable="true"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="normal"
+                android:textColor="#971C1C1C"
+                android:layout_marginBottom="10dp"
+                tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycle_list"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noresult"
+            android:text="Oops! No Result "
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold|italic" />
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/noresult"
+            android:background="@drawable/search_bg"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            tools:ignore="InvalidId" />
+
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_voice_black_24dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

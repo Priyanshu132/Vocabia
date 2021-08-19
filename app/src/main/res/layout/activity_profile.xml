@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A2040A">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textSize="18dp"
+            android:textColor="#CC050C"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail :"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_gravity="end"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail "
+            android:textSize="18dp"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:textColor="#CC050C"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Word  :"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/totalnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#CC050C"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="30dp"
+            tools:ignore="DuplicateIds" />
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="60dp"
+            android:text="Sign Out"
+            android:textColor="#FFF"
+            android:layout_gravity="bottom"
+            android:textSize="18dp"
+            android:background="#CC050C"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

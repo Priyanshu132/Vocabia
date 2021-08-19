@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "460051928542",
+    "firebase_url": "https://vocabia-66de0.firebaseio.com",
+    "project_id": "vocabia-66de0",
+    "storage_bucket": "vocabia-66de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460051928542:android:acf10163b0641158b1394f",
+        "android_client_info": {
+          "package_name": "com.example.vocabia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460051928542-epj88lc96954u1b1v2ntlmide0dav1i7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vocabia",
+            "certificate_hash": "5015dfb4ae225dc61246d3abbe1eb316dcada24f"
+          }
+        },
+        {
+          "client_id": "460051928542-2t64lufklsjocdg8ic0huek4i41urkqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIIBiyVu6Q8NX6Nuo1RwKi9NysyfzIS0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460051928542-2t64lufklsjocdg8ic0huek4i41urkqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

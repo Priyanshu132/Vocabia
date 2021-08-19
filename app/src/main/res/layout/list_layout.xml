@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:layout_marginVertical="2dp"
+    android:id="@+id/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Word"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="normal"
+        android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_baseline_volume_up_24_2"
+            android:id="@+id/pro"/>
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Word"
+        android:textSize="15dp"
+        android:textIsSelectable="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:textStyle="normal"
+        android:textColor="#CC050C"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/exmaple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Found"
+        android:textSize="15dp"
+        android:layout_marginLeft="19dp"
+        android:textIsSelectable="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="normal"
+        android:textColor="#971C1C1C"
+        android:layout_marginBottom="10dp"
+        tools:ignore="DuplicateIds" />
+    </LinearLayout>
+
+

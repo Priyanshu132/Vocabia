@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/signOut"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+<!--
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search"/>
+-->
+
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Add Word"
+        app:showAsAction="ifRoom" />
+
+</menu>
